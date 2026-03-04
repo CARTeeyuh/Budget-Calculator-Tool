@@ -61,9 +61,24 @@ nav {
     border-radius: 100%;
 }
 
+/* Hero Image */
 
+#hero-image {
+    background-image: url(homepage-cover.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 
+/* Being Planning Button */
 
+#planningBtn {
+    color: white;
+    background-color: #2B2953;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 20px;
+    margin-left: 1500px;
+}
 
 /* Budget Calculating Part! */
 
