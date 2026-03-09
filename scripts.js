@@ -7,7 +7,7 @@ addButton.addEventListener('click', () => {
     newInput.innerHTML = `<input type="datetime" class="date-input">
               <input type="text" class="description-input">
               <button class="expense-status" type="button" data-button-id="7">Expense</button>
-              <input type="text" class="expense-input">`;
+              <input type="number" class="expense-input">`;
     newInput.classList.add('input-group');
     newInput.classList.add('custom');
     inputField.appendChild(newInput);

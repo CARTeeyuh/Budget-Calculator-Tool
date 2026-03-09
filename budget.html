@@ -21,51 +21,46 @@
       <section id="pick-your-date">
         <!--If u don't know how to do dropdowns search it up bcuz idk either, but it uses these elements-->
         <h2>Pick Your Date:</h2>
-        <select id="month">
-          <option></option>
-        </select>
-        <select id="year">
-          <option></option>
-        </select>
+        <input type="month" id="dateMonth">
       </section>
 
       <section id="calculation">
         <form>
           <ul id="inputFields">
-            <li id="input-group">
+            <li class="input-group">
               <input type="datetime" class="date-input">
               <p class="expense-title">Bi-Weekly Income</p>
               <!-- If you click this button it switches between being income or expense -->
               <button class="expense-status" type="button" data-button-id="1">Income</button>
-              <input type="text" class="expense-input" value="2500">
+              <input type="number" class="expense-input" value="2500">
             </li>
-            <li id="input-group">
+            <li  class="input-group">
               <input type="datetime" class="date-input">
               <p class="expense-title">Housing/Mortgage</p>
               <!-- If you click this button it switches between being income or expense -->
               <button class="expense-status" type="button" data-button-id="2">Income</button>
-              <input type="text" class="expense-input">
+              <input type="number" class="expense-input">
             </li>
-            <li id="input-group">
+            <li class="input-group">
               <input type="datetime" class="date-input">
               <p class="expense-title">Utilities</p>
               <!-- If you click this button it switches between being income or expense -->
               <button class="expense-status" type="button" data-button-id="3">Income</button>
-              <input type="text" class="expense-input">
+              <input type="number" class="expense-input">
             </li>
-            <li id="input-group">
+            <li class="input-group">
               <input type="datetime" class="date-input">
               <p class="expense-title">Bi-Weekly Income</p>
               <!-- If you click this button it switches between being income or expense -->
               <button class="expense-status" type="button" data-button-id="4">Income</button>
-              <input type="text" class="expense-input" value="2500">
+              <input type="number" class="expense-input" value="2500">
             </li>
-            <li id="input-group">
+            <li class="input-group">
               <input type="datetime" class="date-input">
               <p class="expense-title">Food/Supply</p>
               <!-- If you click this button it switches between being income or expense -->
               <button class="expense-status" type="button"  data-button-id="5">Income</button>
-              <input type="text" class="expense-input">
+              <input type="number" class="expense-input">
             </li>
           </ul>
 
