@@ -4,7 +4,7 @@ const expenseStatusButtons = document.getElementsByClassName('expense-status')[0
 
 addButton.addEventListener('click', () => {
     const newInput = document.createElement('li');
-    newInput.innerHTML = `<input type="datetime" class="date-input">
+    newInput.innerHTML = `<input type="date" class="date-input">
               <input type="text" class="description-input">
               <button class="expense-status" type="button" data-button-id="7">Expense</button>
               <input type="number" class="expense-input">`;
