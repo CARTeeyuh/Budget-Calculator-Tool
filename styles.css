@@ -35,6 +35,10 @@ nav {
     padding: 20px;
     text-align: center;
 
+    & a:hover {
+        background-color: var(--expenses-bg-color);
+    }
+
     & a {
         /*Change the Profile into a image*/
         background-color: var(--secondary-color);
@@ -48,7 +52,7 @@ nav {
         display: flex;
         align-items: center;
         justify-content: center;
-
+        transition: background-color 0.4s ease;
     }
 
     & a[href="profile.html"] {
@@ -125,6 +129,7 @@ form {
     width: 65vw;
     margin-right: 2vw;
 }
+
 
 
 #inputFields li {
