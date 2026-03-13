@@ -110,8 +110,8 @@ nav {
     border-radius: 5px;
     text-decoration: none;
     padding: 20px;
-    margin-left: 20vw;
-    margin-top: 15vw;
+    margin-left: 15vw;
+    margin-top: 20vw;
     width: 8vw;
     height: 3vw;
 }
@@ -183,11 +183,12 @@ form {
 }
 
 #add-new {
-    font-size: 20px;
+    font-size: 15px;
     border: 3px white solid;
     background-color: var(--expenses-bg-color);
-    margin-top: -4em;
-    height: 5vw;
+    margin-top: -5em;
+    margin-bottom: 3em;
+    height: 3vw;
     border-radius: 20px;
     color: white;
 }
@@ -217,15 +218,18 @@ h3 {
     height: 10vw;
 }
 
-.side-items {
+#side-items {
     /* Calendar and profile overview*/
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     /*Move this to the right of the screen */
 }
 
 
 .profile-overview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 1em;
     max-width: 50vw;
 }
@@ -236,13 +240,13 @@ h3 {
     border-radius: 20px;
     justify-content: center;
     align-content: center;
-    max-height: 3vw;
+    max-height: 5vh;
     max-width: 30vw;
 }
 
-#statistics {
-    width: 100vw;
-    height: 5vw;
+#statistics li {
+    width: 25vw;
+    height: 5vh;
 }
 
 button {
@@ -264,3 +268,14 @@ button {
     border: 1px solid black;
 }
 
+#chart {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 50vh;
+}
+
+#myChart {
+    width: 50vw;
+    height:50vh;
+}
