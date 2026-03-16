@@ -1,55 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=League+Spartan:wght@100..900&display=swap');
 
+/* Phone Version */
+
 @media only screen and (max-width: 402px) {
     nav {
         justify-content: center;
     }
-
     h1 {
         font-size: 1.8em;
     }
-
-    #career-selection,
-    #calculation {
+    #career, #calculation {
         width: 95%;
         margin: 0 auto;
     }
-
     #inputFields li {
         grid-template-columns: 60px 1fr 70px 70px;
     }
-
-    #inputFields li .expense-title,
-    #inputFields li input,
-    #inputFields li button {
+    #inputFields li .expense-title, #inputFields li input, #inputFields li button {
         font-size: 12px;
         padding: 8px;
     }
-
-    #add-new,
-    #delete-last,
-    #finish-button {
+    #add-new, #delete-last, #finish-button {
         font-size: 12px;
         padding: 8px 12px;
         border-radius: 12px;
     }
-
     #myChart {
         max-width: 380px;
         height: 250px;
     }
-
     #remaining-balance {
         font-size: 1.1em;
         margin-bottom: 5px;
     }
-
-    #occu,
-    #gross-income {
+    #career-selection, #gross-income {
         font-size: 14px;
         width: 100%;
     }
-
     label {
         font-size: 16px;
     }
@@ -64,8 +51,7 @@
     --font-family: 'Kodchasan', sans-serif;
 }
 
-body,
-html {
+body, html {
     margin: 0;
     padding: 0;
     background-color: var(--background-color);
@@ -87,25 +73,6 @@ nav {
     color: var(--text-color);
     padding: 20px;
     text-align: center;
-}
-
-nav a:hover {
-    background-color: var(--expenses-bg-color);
-}
-
-nav a {
-    background-color: var(--secondary-color);
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 18px;
-    box-sizing: border-box;
-    width: 70px;
-    height: 54px;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.4s ease;
 }
 
 .logo {
@@ -290,7 +257,7 @@ button {
     margin-bottom: 10px;
 }
 
-#occu {
+#career-selection {
     background-color: var(--expenses-bg-color);
     color: white;
     border: 0px;

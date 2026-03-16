@@ -1,81 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles.css">
+  <meta charset='UTF-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+  <link rel='stylesheet' href='styles.css'>
   <title>Budget Calculator</title>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src='https://cdn.jsdelivr.net/npm/chart.js'></script>
 </head>
 
 <body>
   <header>
     <nav>
-      <img src="../images/EECU.png" alt="EECU logo">
+      <img src='../images/EECU.png' alt='EECU logo'>
     </nav>
   </header>
-
   <main>
     <h1>Budget Calculator</h1>
 
     <!-- Career Selection -->
-    <section id="career-selection">
-      <label for="occu">Select Your Career:</label>
-      <select id="occu">
-        <option value="">-- Choose Career --</option>
-      </select>
-
-      <label class="gross-income">Gross Annual Income ($):</label>
-      <input type="number" id="gross-income" readonly value="0">
+    <section id='career'>
+      <label for='career-selection'>Select Your Career:</label>
+      <select id='career-selection'>
+        <option value=''>-- Choose Career --</option>
+      </select> 
+      <label class='gross-income'>Gross Annual Income ($):</label>
+      <input type='number' id='gross-income' readonly value='0'>
     </section>
 
-    <!-- Budget Input Section -->
-    <section id="calculation">
+    <section id='calculation'>
       <form>
-        <ul id="inputFields">
-          <!-- Bi-Weekly Income row filled based on career -->
-          <li class="input-group income">
-            <input type="datetime-local" class="date-input">
-            <p class="expense-title">Income</p>
-            <button class="expense-status" type="button">Income</button>
-            <input type="number" class="expense-input" value="0">
+        <ul id='inputFields'>
+          <!-- Income row filled based on career -->
+          <li class='input-group income'>
+            <input type='datetime-local' class='date-input'>
+            <p class='expense-title'>Income</p>
+            <button class='expense-status' type='button'>Income</button>
+            <input type='number' id="reference" class='expense-input' value='0'>
           </li>
-
-          <!-- Auto-set Stuff -->
-          <li class="input-group">
-            <input type="date" class="date-input">
-            <p class="expense-title">House</p>
-            <button class="expense-status" type="button">Expense</button>
-            <input type="number" class="expense-input" value="2900">
+          <!-- Auto set Stuff -->
+          <li class='input-group'>
+            <input type='date' class='date-input'>
+            <p class='expense-title'>House</p>
+            <button class='expense-status' type='button'>Expense</button>
+            <input type='number' class='expense-input' value='2900'>
           </li>
-          <li class="input-group">
-            <input type="date" class="date-input">
-            <p class="expense-title">Utility</p>
-            <button class="expense-status" type="button">Expense</button>
-            <input type="number" class="expense-input" value="500">
+          <li class='input-group'>
+            <input type='date' class='date-input'>
+            <p class='expense-title'>Utility</p>
+            <button class='expense-status' type='button'>Expense</button>
+            <input type='number' class='expense-input' value='500'>
           </li>
-          <li class="input-group">
-            <input type="date" class="date-input">
-            <p class="expense-title">Supply</p>
-            <button class="expense-status" type="button">Expense</button>
-            <input type="number" class="expense-input" value="350">
+          <li class='input-group'>
+            <input type='date' class='date-input'>
+            <p class='expense-title'>Supply</p>
+            <button class='expense-status' type='button'>Expense</button>
+            <input type='number' class='expense-input' value='350'>
+          </li>
+          <li class='input-group'>
+            <input type='date' class='date-input'>
+            <p class='expense-title'>Savings</p>
+            <button class='expense-status' type='button'>Expense</button>
+            <input type='number' id='tenpercent' class='expense-input' value="500">
           </li>
         </ul>
       </form>
 
-      <!-- Category Editors -->
-      <button id="add-new" type="button">Add Category?</button>
-      <button id="delete-last" type="button">Delete Last Category</button>
-      <button id="finish-button" class="hidden" type="submit">Finish</button>
+      <!-- So the categories can be edited -->
+      <button id='add-new' type='button'>Add Category?</button>
+      <button id='delete-last' type='button'>Delete Last Category</button>
+      <button id='finish-button' class='hidden' type='submit'>Finish</button>
     </section>
 
-    <div id="chart">
-      <canvas id="myChart"></canvas>
+    <div id='chart'>
+      <canvas id='myChart'></canvas>
     </div>
   </main>
 
-  <script type="module" src="scripts.js"></script>
+  <script type='module' src='scripts.js'></script>
 </body>
 
 </html>

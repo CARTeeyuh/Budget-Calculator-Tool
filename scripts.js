@@ -2,7 +2,7 @@ const inputField = document.getElementById('inputFields');
 const addBtn = document.getElementById('add-new');
 const deleteBtn = document.getElementById('delete-last');
 const finishBtn = document.getElementById('finish-button');
-const careerSelector = document.getElementById('occu');
+const careerSelector = document.getElementById('career-selection');
 const grossincome = document.getElementById('gross-income');
 const form = document.querySelector('form');
 
